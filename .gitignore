@@ -1,16 +1,18 @@
-# Godot 4+ specific ignores
-.godot/
-.nomedia
+# Rust build artifacts
+target/
+**/target/
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_credentials.cfg
+# Bevy asset generation
+assets/imported_assets/
+assets/shaders/
+assets/fonts/
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# Bevy compiled assets
+.bevy/
+*.meta
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# Generated asset files (if you're using `bevy_asset_loader` or similar)
+*.ron
+*.scn
+
+# Editor-specific files (Add your own editor's folders here if needed)
